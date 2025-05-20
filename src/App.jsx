@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import About from "./pages/About";
+import AboutPage from "./AboutPage";
 
 function App() {
   return (
@@ -9,8 +9,10 @@ function App() {
         <Route path="/" element={<Navigate to="/about" replace />} />
 
         {/* Route yang sesungguhnya */}
-        <Route path="/about" element={<About />} />
+        <Route path="/about" element={<AboutPage />} />
       </Routes>
     </Router>
   );
 }
+
+export default App;
