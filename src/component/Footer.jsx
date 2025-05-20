@@ -27,8 +27,7 @@ function Footer() {
                         <p className="text-sm">Jl. Prof. Moch Yamin, Sayang, Kec. Cianjur, Kabupaten Cianjur, Jawa Barat 43213</p>
                     </div>
                     </div>
-                
-
+            
                     <div className="flex-1">
                         <p className="text-lg font-semibold mb-4">Ikuti kami di media sosial juga</p>
                         <p className="text-sm mb-6">Dapatkan update terbaru tentang koleksi dan promo dari Reva Baju Anak melalui media sosial kami:</p>                        <div className="flex gap-6 items-center">

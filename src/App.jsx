@@ -1,20 +1,16 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import AboutPage from './AboutPage.jsx'
-import './App.css'
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import About from "./pages/About";
 
 function App() {
-
   return (
-    <>
-      <Router>
+    <Router>
       <Routes>
-        {/* Redirect dari root ke /about */}
+        {/* Redirect dari '/' ke '/about' */}
         <Route path="/" element={<Navigate to="/about" replace />} />
-        <Route path="/about" element={<AboutPage />} />
+
+        {/* Route yang sesungguhnya */}
+        <Route path="/about" element={<About />} />
       </Routes>
     </Router>
-    </>
-  )
+  );
 }
-
-export default App
