@@ -30,7 +30,7 @@ const SliderImage = () => {
   };
 
   return (
-    <div className="relative w-full h-120 overflow-hidden">
+    <div id='beranda' className="relative w-full h-120 overflow-hidden">
       {/* Slides */}
       {slides.map((slide, index) => (
         <div

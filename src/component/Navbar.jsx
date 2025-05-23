@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../App.css';
+import { Link } from 'react-scroll';
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,9 +18,15 @@ function Navbar() {
             />
           </div>
           <div className="hidden md:flex space-x-4">
-            <a href="#" className="text-gray-600 hover:text-gray-800">Beranda</a>
-            <a href="#" className="text-gray-600 hover:text-gray-800">Produk</a>
-            <a href="#" className="text-gray-600 hover:text-gray-800">Reviews</a>
+            <Link to="beranda" smooth={true} duration={500} className="cursor-pointer text-gray-600 hover:text-gray-800">
+              Beranda
+            </Link>
+            <Link to="about" smooth={true} duration={500} className="cursor-pointer text-gray-600 hover:text-gray-800">
+              Tentang kami
+            </Link>
+            <Link to="galery" smooth={true} duration={500} className="cursor-pointer text-gray-600 hover:text-gray-800">
+              Galery
+            </Link>
             <a href="https://reva-baju.vercel.app/" className="bg-pink-500 text-white px-4 py-2 rounded-xl hover:bg-pink-600">Marketplace</a>
           </div>
           <button
